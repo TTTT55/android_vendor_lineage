@@ -67,6 +67,9 @@ type Product_variables struct {
 		Cppflags []string
 		Shared_libs []string
 	}
+	Face_unlock_camera_id struct {
+		Cppflags []string
+	}
 }
 
 type ProductVariables struct {
@@ -91,4 +94,5 @@ type ProductVariables struct {
 	Uses_nvidia_enhancements  *bool `json:",omitempty"`
 	Uses_qcom_bsp_legacy  *bool `json:",omitempty"`
 	Uses_qti_camera_device  *bool `json:",omitempty"`
+	Face_unlock_camera_id  *int `json:",omitempty"`
 }
